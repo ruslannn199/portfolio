@@ -1,5 +1,9 @@
+import Navigation from './components/Navigation';
+
 const App: React.FC = () => {
-  return (<div />);
+  return (
+    <Navigation />
+  );
 }
 
 export default App;
