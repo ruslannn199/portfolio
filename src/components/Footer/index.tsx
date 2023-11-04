@@ -1,6 +1,19 @@
+import Wrapper from '../Wrapper';
+
 const Footer: React.FC = () => {
   return (
-    <footer />
+    <footer className="footer">
+      <Wrapper>
+        <h3>
+          Copyright © {new Date().getFullYear()}. All rights are reserved
+        </h3>
+        <div className="footer__socials">
+          <a
+            aria-label='telegram'
+          ></a>
+        </div>
+      </Wrapper>
+    </footer>
   );
 }
 

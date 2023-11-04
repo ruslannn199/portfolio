@@ -1,9 +1,7 @@
-import Navigation from './components/Navigation';
+import Home from './pages/Home';
 
 const App: React.FC = () => {
-  return (
-    <Navigation />
-  );
+  return (<Home />);
 }
 
 export default App;
