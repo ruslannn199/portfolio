@@ -50,11 +50,19 @@
       align-items: center;
       position: absolute;
       top: -2rem;
-      right: 0rem;
+      right: 0;
       bottom: 0;
       background-color: white;
       height: 100vh + 2rem;
       transform: translateX(100%);
+    }
+
+    @media @landscape-view {
+      right: .3rem;
+    }
+
+    @media @portrait-view {
+      right: .4rem;
     }
   }
 
