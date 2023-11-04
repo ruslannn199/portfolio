@@ -1,0 +1,126 @@
+.nav {
+  font-family: @title-font;
+  width: 90%;
+  height: auto;
+  padding: 2.5rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: @background-color;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 1rem rgb(0 0 0 / 9%);
+  z-index: 20;
+  font-size: @text-size;
+
+  @media @laptop-view {
+    width: 85%;
+  }
+
+  @media @tablet-view {
+    width: 80%;
+    max-width: 107rem;
+  }
+
+  @media @landscape-view {
+    width: 73%;
+  }
+
+  @media @portrait-view {
+    width: 65%;
+  }
+
+  &__logo {
+    color: @black-shade;
+    cursor: pointer;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    transition: transform .5s;
+    z-index: 20;
+
+    @media @tablet-view {
+      width: 32rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -2rem;
+      right: 0rem;
+      bottom: 0;
+      background-color: white;
+      height: 100vh + 2rem;
+      transform: translateX(100%);
+    }
+  }
+
+  &__link {
+    color: @black-shade;
+    text-decoration: none;
+    transition: .23s;
+    font-weight: 600;
+
+    &:hover {
+      color: @subtitle-color;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @media @tablet-view {
+      display: flex;
+      flex-direction: column;
+      width: (7rem / 3);
+      cursor: pointer;
+      z-index: 30;
+  
+      &-checkbox {
+        display: none;
+  
+        &:checked ~ .nav__burger-span {
+          &:nth-of-type(1) {
+            transform-origin: bottom;
+            transform: rotateZ(45deg) translate((.8rem / 3), 0)
+          }
+  
+          &:nth-of-type(2) {
+            transform-origin: top;
+            transform: rotateZ(-45deg);
+          }
+  
+          &:nth-of-type(3) {
+            transform-origin: bottom;
+            width: 50%;
+            transform: translate(1rem, (-1.1rem / 3)) rotateZ(45deg);
+          }
+        }
+      }
+  
+      &-span {
+        @size: (.7rem / 3);
+        background: #240c6b;
+        border-radius: 1rem;
+        height: @size;
+        margin: @size 0;
+        transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  
+        &:nth-of-type(1) {
+          width: 50%;
+        }
+  
+        &:nth-of-type(2) {
+          width: 100%;
+        }
+  
+        &:nth-of-type(3) {
+          width: 75%;
+        }
+      }
+    }
+  }
+}
