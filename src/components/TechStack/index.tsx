@@ -1,5 +1,3 @@
-import Wrapper from '../Wrapper';
-
 interface skillProps {
   id: string;
   src: string;
@@ -26,18 +24,14 @@ const TechStack: React.FC = () => {
   ];
   return (
     <div className="tech-stack">
-      <Wrapper>
-        <h2 className="tech-stack__title">Tech Stack</h2>
-        {/* TODO transfer tech-stack__divider to tech-stack__title"::after */}
-        <div className="tech-stack__divider"></div>
-        <ul className="tech-stack__logos">
-          {...(skills.map(({ id, src, alt }) => (
-            <li key={id}>
-              <img className="tech-stack__icon" src={src} alt={alt} />
-            </li>
-          )))}
-        </ul>
-      </Wrapper>
+      <h2 className="tech-stack__title">Tech Stack</h2>
+      <ul className="tech-stack__icons">
+        {...(skills.map(({ id, src, alt }) => (
+          <li key={id} className="tech-stack__item">
+            <img className="tech-stack__icon" src={src} alt={alt} />
+          </li>
+        )))}
+      </ul>
     </div>
   );
 }

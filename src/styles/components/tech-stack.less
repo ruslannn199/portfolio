@@ -1,6 +1,53 @@
 .tech-stack {
+  display: flex;
+  align-items: center;
+  font-size: @text-size;
+  color: @text-color;
+  padding-top: 15rem;
+  background-color: @background-color-darker;
+
+  @media @tablet-view {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  &__title {
+    @divider: 2px solid rgba(45, 46, 50, .5);
+    margin-right: 7rem;
+    padding-right: 2rem;
+    border-right: @divider;
+    font-family: @text-font;
+    font-weight: 600;
+    color: @black-shade;
+
+    @media @tablet-view {
+      margin-right: 0;
+      margin-bottom: 3rem;
+      border-bottom: @divider;
+      border-right: none;
+      padding-right: 0;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__icons {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 0;
+
+    @media @tablet-view {
+      justify-content: center;
+    }
+  }
+
   &__icon {
-    transition: all .3s ease-in-out;
+    cursor: pointer;
+    width: 11rem;
+    height: 5rem;
+    transition: .3s ease-in-out;
+
     &:hover {
       transform: translateY(-1rem);
     }
