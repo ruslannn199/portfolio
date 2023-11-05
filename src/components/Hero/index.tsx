@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
                 Front-End&nbsp;React Developer <img className="hero__hand" src={WavingHand} alt="waving" />
               </h1>
               <h2 className="hero__subtitle">
-                Hi, I'm Ruslan Kamenskiy. A passionate Front-end React Developer from Saint Petersburg, Russia.
+                Hi, I'm Ruslan Kamenskiy. A passionate Front-end React Developer from Saint Petersburg, Russia. 📍
               </h2>
               <div className="hero__links">
                 <a
