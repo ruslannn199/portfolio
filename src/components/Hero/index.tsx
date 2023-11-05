@@ -7,32 +7,36 @@ const Hero: React.FC = () => {
     <section id="home" className="hero">
       <Wrapper>
         <div className="hero__content">
-          <h2 className="hero__title">
-            Front-End&nbsp;React Developer<img className="hero__hand" src={WavingHand} alt="waving" />
-          </h2>
-          <p className="hero__text">
-            Hi, I'm Ruslan Kamenskiy. A passionate Front-end React Developer from Saint Petersburg, Russia.
-          </p>
-          <div className="hero__links">
-            <a
-              href="https://github.com/ruslannn199"
-              target="_blank"
-              rel="noreferrer"
-              className="hero__link"
-            >
-              <IconBrandGithub />
-            </a>
-            <a
-              href="https://t.me/@ruslannn199"
-              target="_blank"
-              rel="noreferrer"
-              className="hero__link"
-            >
-              <IconBrandTelegram />
-            </a>
+          <div className="hero__main">
+            <div className="hero__text">
+              <h1 className="hero__title">
+                Front-End&nbsp;React Developer <img className="hero__hand" src={WavingHand} alt="waving" />
+              </h1>
+              <h2 className="hero__subtitle">
+                Hi, I'm Ruslan Kamenskiy. A passionate Front-end React Developer from Saint Petersburg, Russia.
+              </h2>
+              <div className="hero__links">
+                <a
+                  href="https://github.com/ruslannn199"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hero__link"
+                >
+                  <IconBrandGithub width={36} height={36} />
+                </a>
+                <a
+                  href="https://t.me/@ruslannn199"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hero__link"
+                >
+                  <IconBrandTelegram width={36} height={36} />
+                </a>
+              </div>
+            </div>
+            <div className="hero__img" />
           </div>
         </div>
-        <div className="hero__img" />
       </Wrapper>
     </section>
   );
