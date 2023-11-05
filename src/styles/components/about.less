@@ -1,0 +1,123 @@
+.about {
+  padding: 15rem 0;
+
+  @media @tablet-view {
+    padding: 8rem 0;
+  }
+
+  &__content {
+    .flex();
+    gap: 8rem;
+
+    @media @tablet-view {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  }
+
+  &__images {
+    position: relative;
+
+    span {
+      width: 19rem;
+      height: 19rem;
+      position: absolute;
+      top: 20rem;
+      left: 30rem;
+      border-radius: 50%;
+      background-color: @background-color;
+
+      @media @tablet-view {
+        width: 17rem;
+        height: 17rem;
+        bottom: -.3rem;
+        right: 19rem;
+      }
+
+      @media @landscape-view {
+        display: none;
+      }
+    }
+  }
+
+  &__workplace {
+    width: 41rem;
+    height: 35rem;
+    border-radius: 1.7rem;
+
+    @media @tablet-view {
+      margin-bottom: 3.5rem;
+    }
+
+    @media @portrait-view {
+      width: 90%;
+      height: auto;
+    }
+  }
+
+  &__working-emoji {
+    position: absolute;
+    z-index: 15;
+    width: 6rem;
+    bottom: 3.5rem;
+    left: 36.5rem;
+
+    @media @tablet-view {
+      bottom: 7.5rem;
+      left: 35.5rem;
+    }
+
+    @media @landscape-view {
+      display: none;
+    }
+  }
+
+  &__profession {
+    width: 19rem;
+    animation: rotate 9s linear infinite;
+
+    @media @tablet-view {
+      width: 17rem;
+    }
+  }
+
+  &__article {
+    padding-right: 1.5rem;
+
+    @media @tablet-view {
+      max-width: 54rem;
+      margin: 0 auto;
+    }
+
+    @media @portrait-view {
+      padding-right: 0;
+    }
+  }
+
+  &__title {
+    font-size: @text-size;
+    color: @subtitle-color;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    font-size: @title-size;
+    font-family: @title-font;
+    line-height: 1.4;
+    margin: 0;
+    margin-bottom: 2rem;
+    color: @black-shade;
+  }
+
+  &__text {
+    font-size: @text-size;
+    font-family: @text-font;
+    color: @text-color;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+  }
+}
