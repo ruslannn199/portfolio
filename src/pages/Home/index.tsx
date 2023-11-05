@@ -5,11 +5,10 @@ import Hero from '../../components/Hero';
 import Header from '../../components/Header';
 import Portfolio from '../../components/Portfolio';
 import TechStack from '../../components/TechStack';
-import Wrapper from '../../components/Wrapper';
 
 const Home: React.FC = () => {
   return (
-    <Wrapper>
+    <>
       <Header />
       <Hero />
       <TechStack />
@@ -17,7 +16,7 @@ const Home: React.FC = () => {
       <Portfolio />
       <Contact />
       <Footer />
-    </Wrapper>
+    </>
   );
 }
 
