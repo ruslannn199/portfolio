@@ -1,0 +1,160 @@
+.portfolio {
+  background-color: @background-color-darker;
+  padding: 15rem 0;
+
+  @media @tablet-view {
+    padding: 8rem 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @media @landscape-view {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    color: @subtitle-color;
+    font-size: @text-size;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    font-size: @title-size;
+    color: @black-shade;
+    margin: 0;
+    margin-bottom: 6rem;
+  }
+
+  &__cards {
+    .flex();
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 5rem;
+  }
+
+  &__card {
+    display: flex;
+    background-color: @background-color;
+    box-shadow: @shadow;
+    border-radius: 1.7rem;
+    height: 40rem;
+    padding: 2rem;
+    gap: 8rem;
+
+    &_reversed {
+      flex-direction: row-reverse;
+    }
+
+    @media @tablet-view {
+      height: 75rem;
+      flex-direction: column;
+      gap: 3rem;
+      width: fit-content;
+      margin: 0 auto;
+    }
+
+    &-link {
+      position: relative;
+      width: 100%;
+      max-width: 100rem;
+      height: auto;
+      border-radius: 1.7rem;
+      box-shadow: @shadow;
+      overflow: hidden;
+    }
+
+    &-img {
+      width: 100%;
+      height: auto;
+      transition: 3s;
+      transform: translateY(0);
+
+      &:hover {
+        transform: translateY(calc(-100% + 40rem));
+      }
+    }
+  }
+
+  &__details {
+    display: flex;
+    width: 85%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media @tablet-view {
+      margin: 0 auto;
+    }
+
+    @media @portrait-view {
+      width: 100%;
+    }
+
+    &-title {
+      .flex();
+      font-size: @text-size;
+      text-transform: uppercase;
+      color: @black-shade;
+      margin: 0;
+      margin-bottom: 2rem;
+      position: relative;
+      gap: 0.2rem;
+    }
+
+    &-subtitle {
+      font-size: @text-size;
+      color: @text-color;
+      text-align: center;
+      text-transform: none;
+      font-weight: 500;
+    }
+  }
+
+  &__stack {
+    .flex();
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    &-item {
+      margin: 0;
+      font-size: @text-size;
+      color: #000;
+      font-weight: 600;
+      background-color: @background-color;
+      box-shadow: @shadow;
+      padding: 1rem 1.3rem;
+      font-family: @text-font;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__link {
+    .flex();
+    font-size: @text-size;
+    color: @black-shade;
+    font-weight: 500;
+    text-decoration: none;
+    gap: .5rem;
+
+    &:hover {
+      color: @subtitle-color;
+      transition: .3s;
+    }
+  }
+}
