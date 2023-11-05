@@ -17,7 +17,6 @@ interface PortfolioCardProps {
 const PortfolioCard: React.FC<PortfolioCardProps> = ({
   card: { title, img, desc, techs, code, deploy }, reversed
 }) => {
-  console.log(reversed);
   return (
     <div className={`portfolio__card${reversed ? ' portfolio__card_reversed' : ''}`}>
       <a className="portfolio__card-link" target="_blank" href={deploy} rel="noreferrer">
