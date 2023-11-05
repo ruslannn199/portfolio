@@ -8,7 +8,7 @@ const Contact: React.FC = () => {
         <div className="contact__content">
           <article className="contact__article">
             <h3 className="contact__article-title">contact</h3>
-            <h4 className="contact__article-subtitle">Don't be shy! Hit me up! 👇</h4>
+            <h4 className="contact__article-subtitle">Don't&nbsp;be&nbsp;shy! Hit&nbsp;me&nbsp;up!&nbsp;👇</h4>
           </article>
           <div className="contact__info">
             <div className="contact__box">
