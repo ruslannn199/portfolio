@@ -28,7 +28,8 @@
   }
 
   @media @portrait-view {
-    width: 65%;
+    width: calc(100% - 8rem);
+    padding: 2.5rem 4rem;
   }
 
   &__logo {
@@ -54,11 +55,13 @@
       bottom: 0;
       background-color: white;
       height: 100vh + 2rem;
-      transform: translateX(100%);
+      padding: 0;
+      transform: translateX(calc(100% + 32rem));
     }
 
     @media @landscape-view {
       right: .3rem;
+      transform: translateX(calc(100% + 31rem));
     }
 
     @media @portrait-view {

@@ -23,7 +23,7 @@ const Header: React.FC = () => {
       <h3 className="nav__logo" onClick={scrollPage}>Ruslan Kamenskiy</h3>
       <ul
         className="nav__list"
-        style={{ transform: `translateX(${checked || width > 992 ? '1%' : '100%'})` }}
+        style={{ transform: `translateX(${checked || width > 992 ? '1.25%' : '100%'})` }}
         onClick={handleMissClick}
       >
         <li><a className="nav__link" href="/#home">Home</a></li>

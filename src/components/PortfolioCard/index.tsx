@@ -7,6 +7,7 @@ export interface PortfolioCardValues {
   techs: string[];
   code: string;
   deploy: string;
+  overflow?: boolean;
 }
 
 interface PortfolioCardProps {
@@ -15,12 +16,17 @@ interface PortfolioCardProps {
 }
 
 const PortfolioCard: React.FC<PortfolioCardProps> = ({
-  card: { title, img, desc, techs, code, deploy }, reversed
+  card: { title, img, desc, techs, code, deploy, overflow }, reversed
 }) => {
   return (
     <div className={`portfolio__card${reversed ? ' portfolio__card_reversed' : ''}`}>
-      <a className="portfolio__card-link" target="_blank" href={deploy} rel="noreferrer">
-        <img className="portfolio__card-img" src={img} alt={title} />
+      <a
+        className={overflow ? "portfolio__card-link portfolio__card-link_overflow": "portfolio__card-link"}
+        target="_blank"
+        href={deploy}
+        rel="noreferrer"
+      >
+        <img className={overflow ? "portfolio__card-img_overflow" : "portfolio__card-img"} src={img} alt={title} />
       </a>
       <article className="portfolio__details">
         <h3 className="portfolio__details-title">{title}</h3>
