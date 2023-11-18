@@ -1,6 +1,6 @@
-import WorkingEmoji from '../../../public/images/working.png';
-import AboutImg from '../../../public/images/about.webp';
-import RoundedText from '../../../public/images/profession-text.svg';
+import WorkingEmoji from '/images/working.png';
+import AboutImg from '/images/about.webp';
+import RoundedText from '/images/profession-text.svg';
 import Wrapper from '../Wrapper';
 
 const About: React.FC = () => {

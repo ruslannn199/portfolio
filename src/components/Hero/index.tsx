@@ -1,5 +1,5 @@
 import { IconBrandGithub, IconBrandTelegram } from '@tabler/icons-react';
-import WavingHand from '../../../public/images/avatar/waving.png';
+import WavingHand from '/images/avatar/waving.png';
 import Wrapper from '../Wrapper';
 
 const Hero: React.FC = () => {

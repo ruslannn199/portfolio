@@ -1,9 +1,9 @@
 import PortfolioCard, { PortfolioCardValues } from '../PortfolioCard';
 import Wrapper from '../Wrapper';
-import FundleGames from '../../../public/images/projects/fundle-games.png';
-import RSCSS from '../../../public/images/projects/rs-css.png';
-import ReactMovie from '../../../public/images/projects/react-movie.png';
-import CozyHouse from '../../../public/images/projects/cozy-house.png';
+import FundleGames from '/images/projects/fundle-games.png';
+import RSCSS from '/images/projects/rs-css.png';
+import ReactMovie from '/images/projects/react-movie.png';
+import CozyHouse from '/images/projects/cozy-house.png';
 
 const Portfolio: React.FC = () => {
   const PortfolioCards: PortfolioCardValues[] = [
