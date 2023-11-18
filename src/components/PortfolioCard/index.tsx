@@ -32,7 +32,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
         <h3 className="portfolio__details-title">{title}</h3>
         <h4 className="portfolio__details-subtitle">{desc}</h4>
         <div className="portfolio__stack">
-          {...(techs.map((tech, key) => (<p key={key} className="portfolio__stack-item">{tech}</p>)))}
+          {techs.map((tech, key) => (<p key={key} className="portfolio__stack-item">{tech}</p>))}
         </div>
         <div className="portfolio__links">
           <a className="portfolio__link" target="_blank" href={code} rel="noreferrer">

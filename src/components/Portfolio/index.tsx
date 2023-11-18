@@ -4,8 +4,10 @@ import FundleGames from '/images/projects/fundle-games.png';
 import RSCSS from '/images/projects/rs-css.png';
 import ReactMovie from '/images/projects/react-movie.png';
 import CozyHouse from '/images/projects/cozy-house.png';
+import useWindowDimensions from '../../hooks';
 
 const Portfolio: React.FC = () => {
+  const { width } = useWindowDimensions();
   const PortfolioCards: PortfolioCardValues[] = [
     {
       title: 'Fundle-games 🎲',
@@ -30,7 +32,7 @@ const Portfolio: React.FC = () => {
       techs: ['React', 'Typescript', 'Styled-components', 'React Router'],
       code: 'https://github.com/ruslannn199/react-movie',
       deploy: 'https://react-movie-ruslan-kamenskiy.netlify.app/',
-      overflow: true,
+      overflow: width > 480,
     },
     {
       title: 'Cozy House 🦴',
