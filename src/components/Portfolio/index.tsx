@@ -22,7 +22,7 @@ const Portfolio: React.FC = () => {
       img: RSCSS,
       desc: `This is my continuation of the CSS Dinner game, which focuses on extremely complex selectors that can be difficult even for an experienced programmers.`,
       techs: ['Typescript', 'Sass', 'Jest'],
-      code: 'https://github.com/ruslannn199/',
+      code: 'https://github.com/ruslannn199/css-dinner',
       deploy: 'https://rolling-scopes-school.github.io/ruslannn199-JSFE2023Q1/rs-css/',
     },
     {
